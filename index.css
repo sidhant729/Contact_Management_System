@@ -1,0 +1,18 @@
+.main-btn, .currentUsers
+{
+  display: none;
+}
+
+.main-form
+{
+  display: none;
+}
+
+.active
+{
+  display: block;
+}
+
+.data-update-btn {
+  display: none; /* Initially hide the "Update" button */
+}
