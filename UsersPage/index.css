@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before
+{
+  padding : 0;
+  margin : 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: #1d2630;
+  color: white;
+}
+.main-btn, .currentUsers
+{
+  display: none;
+}
+
+.main-form
+{
+  width: 100%;
+  display: none;
+}
+.active
+{
+  display: block;
+}
+
+.data-update-btn {
+  display: none; /* Initially hide the "Update" button */
+}
+
+.header
+{
+  width: 100%;
+  text-align: center;
+}
+
+/* Add User and Add User Button Styling(Inside main) */
+.main-add-user-btn
+{
+  margin-left : 8rem;
+  margin-top:20px;
+}
+.addUserBtn
+{
+  padding:0.6rem 0.6rem;
+}
+
+/* Main Table and Table Styling  */
+.main-table-container
+{
+  width: 100%;
+  height: 100vh;
+  margin-top: 40px;
+}
+.userContainer
+{
+  width: 100%;
+}
+/* thead td
+{
+  padding-left:8rem;
+  padding-top: 10px;
+} */
+td
+{
+  padding-left: 8rem;
+  padding-top: 10px;
+}
+.delBtn
+{
+  margin-left:-14px;
+  margin-right:10px;
+  padding:2px 2px;
+}
+.updateBtn
+{
+  padding:2px 2px;
+}
+
+.main-form-cont
+{
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+Form
+{
+  width: 50%;
+  text-align: center;
+}
+.table-row
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.label
+{
+  width: 50%;
+}
+.input
+{
+  width: 50%;
+}
+.input input
+{
+  height: 4vh;
+  /* padding: 0.8rem 1.3rem; */
+  width: 70%;
+  padding-left:5px;
+}
+
+.add, .update
+{
+  padding: 0.3rem 1.8rem;
+  margin-top: 4%;
+  text-align: left;
+  appearance: none;
+}
+.update
+{
+  margin-left: 40%;
+}
+.delBtn
+{
+  padding:0.3rem 0.8rem;
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  transition:0.3s ease-in-out ;
+}
+.updateBtn, .add, .update
+{
+  padding:0.3rem 0.8rem;
+  background-color: green;
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+}
+.delBtn:hover
+{
+  background-color: white;
+  color:red;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.updateBtn:hover, .add:hover, .update:hover
+{
+  background-color: white;
+  color:green;
+  cursor: pointer;
+  border: 1px solid green;
+}
+
+.addUserBtn
+{
+  appearance: none;
+  background-color: skyblue;
+  color: black;
+  font-weight: 600;
+  border: 1px solid white;
+}
+.addUserBtn:hover
+{
+  border: 1px solid blue;
+  color: blue;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
