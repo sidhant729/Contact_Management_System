@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Management System</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="header">
-            <h1>Users</h1>
+      <div class="header">
+        <h1>Users</h1>
+      </div>
+      <div class="main">
+        <div class="main-add-user-btn main-btn active">
+          <button class="addUserBtn">Add User</button>
         </div>
-        <div class="main">
-            <div class="main-btn active">
-                
-                <button class="addUserBtn">Add User</button>
-
-            </div>
-            <div class="main-form">
-                <Form>
-                    <div>
-                        <label for="userName">Name:</label>
-                        <input type="text" name="userName" id="userName">
-                    </div>
-                    <div>
-                        <label for="userAge">Age: </label>
-                        <input type="number" name="userAge" id="userAge">
-                    </div>
-                    <div>
-                        <label for="userPhoneNumber">Phone:</label>
-                        <input type="number" name="userPhoneNumber" id="userPhoneNumber" minlength="10">
-                    </div>
-                    <div>
-                        <label for="userEmail">Email:</label>
-                        <input type="email" name="userEmail" id="userEmail">
-                    </div>
-                    <div>
-                        <label for="userAddress">Address:</label>
-                        <input type="text" name="userAddress" id="userAddress">
-                    </div>
-                    <div>
-                        <button class="data-add-btn">Add</button>
-                    </div>
-                    <div>
-                        <button class="data-update-btn">Update</button>
-                    </div>
-                </Form>
-            </div>
-            <div class="currentUsers active">
-                <table class="userContainer">
-                    <tr>
-                        <td>
-                            Name
-                        </td>
-                        <td>
-                            Age
-                        </td>
-                        <td>
-                            Phone Number
-                        </td>
-                        <td>
-                            Email
-                        </td>
-                        <td>
-                            Address
-                        </td>
-                        <td>
-                            Actions
-                        </td>
-                    </tr>
-                </table>
-            </div>
+        <div class="main-form">
+          <div class="main-form-cont">
+            <form>
+              <div class="table-row">
+                <div class="label"><label for="userName">Name:</label></div>
+                <div class="input">
+                  <input
+                    placeholder="Enter Your Name"
+                    type="text"
+                    name="userName"
+                    id="userName"
+                  />
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="label"><label for="userAge">Age: </label></div>
+                <div class="input">
+                  <input
+                    placeholder="Enter Your Age"
+                    type="number"
+                    name="userAge"
+                    id="userAge"
+                  />
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="label">
+                  <label for="userPhoneNumber">Phone:</label>
+                </div>
+                <div class="input">
+                  <input
+                    placeholder="Enter Your Phone"
+                    type="number"
+                    name="userPhoneNumber"
+                    id="userPhoneNumber"
+                    minlength="10"
+                  />
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="label"><label for="userEmail">Email:</label></div>
+                <div class="input">
+                  <input
+                    placeholder="Enter Your Email"
+                    type="email"
+                    name="userEmail"
+                    id="userEmail"
+                  />
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="label">
+                  <label for="userAddress">Address:</label>
+                </div>
+                <div class="input">
+                  <input
+                    placeholder="Enter Your Address"
+                    type="text"
+                    name="userAddress"
+                    id="userAddress"
+                  />
+                </div>
+              </div>
+              <div>
+                <button class="add data-add-btn">Add</button>
+              </div>
+              <div>
+                <button class="update data-update-btn">Update</button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="main-table-container currentUsers active">
+          <table class="userContainer active">
+            <thead>
+              <td>Name</td>
+              <td>Age</td>
+              <td>Phone Number</td>
+              <td>Email</td>
+              <td>Address</td>
+              <td>Actions</td>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

@@ -72,16 +72,16 @@ function getData() {
     userDetails += "<td>" + user.userEmail + "</td>";
     userDetails += "<td>" + user.userAddress + "</td>";
     userDetails +=
-      '<td><button onClick="deleteUser(' +
+      '<td class="actions-btn"><button class="delBtn" onClick="deleteUser(' +
       ind +
       ')">Delete</button>' +
-      '<button onClick="updateUser(' +
+      '<button class="updateBtn" onClick="updateUser(' +
       ind +
       ')">Update</button></td>';
     userDetails += "</tr>";
   });
 
-  document.querySelector(".userContainer").innerHTML = userDetails;
+  document.querySelector(".currentUsers tbody").innerHTML = userDetails;
 }
 
 getData();
