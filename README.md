@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
- #description
- #features
- #technologies-used
- #installation
- #usage
- #contributing
+ - #description
+ - #features
+ - #technologies-used
+ - #installation
+ - #usage
+ - #contributing
 
 
 ## Description
